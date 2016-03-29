@@ -5,7 +5,6 @@ body
 	background:-moz-radial-gradient(circle, #33495E, #2E2329);
 	
 }
-
 #loading
 {
 	animation: loading 10s linear;
@@ -45,6 +44,11 @@ body
 	100% {width:110px;}
 }
 
+#home
+{
+	animation: home 11s linear;
+	opacity:1;
+}
 #home a
 {
 	position: absolute;
@@ -55,6 +59,17 @@ body
 	text-align: center;
 	box-shadow: none;
 
+}
+@keyframes home
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity:1;}
+}
+#facebook
+{
+	animation: facebook 11s linear;
+	opacity:1;
 }
 #facebook a
 {
@@ -67,6 +82,17 @@ body
 	box-shadow: none;
 
 }
+@keyframes facebook
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity:1;}
+}
+#twitter
+{
+	animation: twitter 11s linear;
+	opacity:1;
+}
 #twitter a
 {
 	position: absolute;
@@ -77,6 +103,17 @@ body
 	text-align: center;
 	box-shadow: none;
 
+}
+@keyframes twitter
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity:1;}
+}
+#linkedin
+{
+	animation: linkedin 11s linear;
+	opacity:1;
 }
 #linkedin a
 {
@@ -89,6 +126,17 @@ body
 	box-shadow: none;
 
 }
+@keyframes linkedin
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity:1;}
+}
+#github
+{
+	animation: github 11s linear;
+	opacity:1;
+}
 #github a
 {
 	position: absolute;
@@ -99,6 +147,12 @@ body
 	text-align: center;
 	box-shadow: none;
 
+}
+@keyframes github
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity:1;}
 }
 
 #home a:hover,#facebook a:hover, #github a:hover, #linkedin a:hover, #twitter a:hover
