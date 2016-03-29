@@ -124,25 +124,49 @@ body
 	100% {opacity: 1;}
 }
 
-#main-content
+#bio
 {
-	animation : main-content 12s linear;
+	animation: bio 12s linear ;
+	height: 200px;
+	width: 800px;
 	position: absolute;
-	top: calc(50%);
+	font-size: 1.3em;
+	color:#eee;
+	top: calc(50% );
+	left: calc(50% - 350px);
+	opacity: 1;
+	text-align: center;
+}
+@keyframes bio
+{
+	0% {opacity:0;}
+	83% {opacity:0;}
+	100% {opacity: 1;}
+}
+
+#menus
+{
+	animation : menus 12s linear;
+	position: absolute;
+	top: calc(50% + 75px);
 	left: calc(50% - 240px);
 	opacity: 1;
 	overflow: auto;
 }
-#main-content ul
+#menus ul
 {
 	display:flex;  
 	list-style:none;
 }
-#main-content ul li
+#menus ul li
 {
 	padding-left: 20px;
 }
-#main-content h3
+#menus ul li a:hover
+{
+	font-size:1.7em;
+}
+#menus h3
 {
 	padding: 10px 30px;
 	display: inline-block;
@@ -152,7 +176,28 @@ body
 	color: #eee;
 	border: 3px solid #eee;
 }
-@keyframes main-content
+@keyframes menus
+{
+	0% {opacity:0;}
+	90% {opacity:0;}
+	100% {opacity: 1;}
+}
+
+.profile
+{
+	animation : profile 12s linear;
+	border: 2px solid #aaa;
+	-webkit-box-shadow: 0px 14px 37px -6px rgba(0,0,0,01);
+	-moz-box-shadow: 0px 14px 37px -6px rgba(0,0,0,01);
+	box-shadow: 0px 14px 37px -6px rgba(0,0,0,01);
+	opacity: 1;
+	width: 7%;
+	position: absolute;
+	top: calc(50% - 125px);
+	left: calc(50% + 260px);
+}
+
+@keyframes profile
 {
 	0% {opacity:0;}
 	90% {opacity:0;}
